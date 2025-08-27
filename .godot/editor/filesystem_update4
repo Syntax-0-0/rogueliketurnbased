@@ -1,0 +1,13 @@
+res://Scenes/coin.tscn
+res://Scenes/death_menu.tscn
+res://Scenes/door.tscn
+res://Scenes/enemy.tscn
+res://Scenes/heart.tscn
+res://Scenes/key.tscn
+res://Scenes/main.tscn
+res://Scenes/main_menu.tscn
+res://Scenes/minimap_grid.tscn
+res://Scenes/player.tscn
+res://Scenes/room.tscn
+res://Scenes/sfx.tscn
+res://Scenes/ui.tscn

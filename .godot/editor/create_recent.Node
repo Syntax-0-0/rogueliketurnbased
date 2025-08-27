@@ -1,0 +1,14 @@
+Label
+Sprite2D
+SpinBox
+Button
+VBoxContainer
+Panel
+AudioStreamPlayer2D
+Node
+CollisionShape2D
+Area2D
+GridContainer
+CanvasGroup
+Container
+SubViewportContainer

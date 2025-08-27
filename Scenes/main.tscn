@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ixu4wiu851qf"]
+
+[ext_resource type="PackedScene" uid="uid://pjmlqe40txk0" path="res://Scenes/player.tscn" id="3_68qqd"]
+[ext_resource type="Script" uid="uid://b7o6lnxubqfu5" path="res://Scripts/generation.gd" id="3_kjt23"]
+[ext_resource type="PackedScene" uid="uid://cn0m68ywvoot" path="res://Scenes/ui.tscn" id="3_siglb"]
+[ext_resource type="Script" uid="uid://nmk41h0y8dyb" path="res://Scripts/enemies.gd" id="5_2lgnf"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Generation" type="Node" parent="."]
+script = ExtResource("3_kjt23")
+enemy_spawn_chance = 0.7
+coin_spawn_chance = 0.8
+heart_spawn_chance = 0.3
+max_enemies_per_room = 1
+max_coins_per_room = 3
+max_hearts_per_room = 2
+
+[node name="Enemies" type="Node" parent="." groups=["Enemy_Manager"]]
+script = ExtResource("5_2lgnf")
+
+[node name="UI" parent="." instance=ExtResource("3_siglb")]
+
+[node name="Player" parent="." instance=ExtResource("3_68qqd")]
+position = Vector2(608, 352)
