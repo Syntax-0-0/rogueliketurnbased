@@ -25,6 +25,8 @@ func player_input() -> void:
 		try_attack(Vector2.LEFT)
 	if Input.is_action_just_pressed("Attack_Right"):
 		try_attack(Vector2.RIGHT)
+		
+	
 	
 	
 

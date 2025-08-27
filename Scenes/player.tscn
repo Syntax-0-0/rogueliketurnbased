@@ -67,7 +67,7 @@ script = ExtResource("3_q76cq")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_8tuur")
+&"": SubResource("AnimationLibrary_8tuur")
 }
 
 [node name="SFX" type="AudioStreamPlayer2D" parent="."]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk4ogsmp3ga3p"]
+
+[ext_resource type="Script" uid="uid://cthr4febaq5ox" path="res://Scripts/CardGeneration.gd" id="1_0qqmn"]
+
+[node name="Card" type="Panel"]
+offset_left = 104.0
+offset_top = 32.0
+offset_right = 413.0
+offset_bottom = 466.0
+script = ExtResource("1_0qqmn")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_right = 309.0
+offset_bottom = 40.0
