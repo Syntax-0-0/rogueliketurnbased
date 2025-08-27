@@ -5,7 +5,6 @@ var range : int
 var tiles : int
 var directionNumber : int
 var direction : Vector2 
-var cardSelect : int
 enum cardType{
 	heavy,
 	attack,
@@ -16,9 +15,7 @@ enum cardType{
 @onready var label =$RichTextLabel
 
 func _init(C_Name):
-	
-	
-	
+	cardType.keys()[randi() % cardType.size()]
 	match cardType:
 		cardType.heavy:
 			label.text = "Heavy Attack"
@@ -51,3 +48,7 @@ func _init(C_Name):
 					direction = Vector2.LEFT
 				4:
 					direction = Vector2.RIGHT
+					
+		cardType.dodge:
+			label.text = "dodge"
+				
